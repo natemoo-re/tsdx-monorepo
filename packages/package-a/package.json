@@ -1,0 +1,19 @@
+{
+  "name": "package-a",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "umd:main": "dist/tsdx-monorepo.umd.production.js",
+  "module": "dist/tsdx-monorepo.es.production.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --env=jsdom"
+  },
+  "dependencies": {
+    "package-b": "^0.1.0"
+  }
+}
